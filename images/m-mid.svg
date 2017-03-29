@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="465.765 826.899 1065.912 256.201">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28338b"/>
+      <stop offset="1" stop-color="#62689d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(465.765 826.899)">
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M1.018,1311.35l115.738-165.634L249.108,1286.9l34.542-36.847,26.675-13.864v-67.858l36.936-45.969,40.355,50.347,13.477,58.813,17.986,37.5L488.847,1261V1141.337l68.4-62.021,15.739,45.968v210.233l-571.967-1.4Z" transform="translate(-1.018 -1079.316)"/>
+    <path id="Path_5" data-name="Path 5" class="cls-1" d="M1255.892,1334.964,1155.718,1205.22l-114.553,110.6-29.9-28.863-23.088-10.86v-53.154l-31.968-36.009-34.929,39.437-11.664,46.069-15.569,29.377-60.385-6.288V1201.79l-59.2-48.582-13.623,36.007v164.678l495.05-1.1Z" transform="translate(-189.98 -1097.692)"/>
+  </g>
+</svg>

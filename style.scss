@@ -1,0 +1,136 @@
+body {
+	background: url(images/background.svg) center center;
+	background-size: cover;
+}
+
+.monster-obj {
+	position: relative;
+	margin: 10vw auto 0;
+	width: 200px;
+	transition: .4s;
+	z-index: 10;
+
+	&:hover {
+		transform: scale(1.2);
+		transition: .4s;
+	}
+	
+	.monster {
+		background: url(images/monster.svg) no-repeat center center;
+		background-size: contain;
+
+		height: 200px;
+		width: 200px;
+
+		animation-name: monster;
+	    animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+	
+	.clouds {
+		background: url(images/cloud.svg) no-repeat center center;
+		background-size: contain;
+		$height: 200px;
+
+		height: $height;
+		width: $height * 3;
+		position: absolute;
+		top: 0;
+		left: -50%;
+		z-index: -1;
+		opacity: .8;
+
+		animation-name: cloud;
+	    animation-duration: 6s;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes cloud {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes monster {
+	0% { transform   : rotate(0); }
+	40% { transform  : rotate(5deg); }
+	45% { transform  : rotate(-5deg); }
+	50% { transform  : rotate(5deg); }
+	55% { transform  : rotate(-5deg); }
+	100% { transform : rotate(0); }
+}
+
+.mountains {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+
+	.mountain-front,
+	.mountain-middle,
+	.mountain-back {
+		height: 200px;
+		width: 100%;
+	}
+
+	.mountain-front {
+		background: url(images/m-front.svg) no-repeat center center;
+		background-size: contain;
+		z-index: 3;
+		position: absolute;
+	}
+	.mountain-middle {
+		background: url(images/m-mid.svg) no-repeat center center;
+		background-size: contain;
+		z-index: 2;
+		position: absolute;
+	}
+	.mountain-back {
+		background: url(images/m-back.svg) no-repeat center center;
+		background-size: contain;
+		z-index: 1;
+		position: absolute;
+	}
+}
+
+.text {
+	text-align: center;
+	display: block;
+	margin-top: 50px;
+	color: white;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 0 2px 2px black;
+}
+
+.highlight {
+	color: #ef5292;
+	font-family: Friday13;
+	display: block;
+	font-size: 100px;
+	margin-top: 20px;
+}
+
+.cta {
+	background: linear-gradient(to bottom, #ef5292, darken(#ef5292, 5%));
+	color: white;
+	padding: 20px 60px;
+	z-index: 10;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px 2px rgba(black, .6);
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	margin-top: 30px;
+	transition: .4s;
+
+	&:hover {
+		background: linear-gradient(to bottom, darken(#ef5292, 5%), darken(#ef5292, 10%));
+		transform: scale(1.2) rotate(5deg);
+		transition: .4s;
+	}
+}
